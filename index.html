@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Assignment 03</title>
+
+   <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind & Daisy UI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font Manrope-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ABEF5F',
+            secondary: 'rgb(115, 115, 115)',
+          },
+          fontFamily: {
+            Manrope: "Manrope"
+          }
+         
+        }
+      }
+    }
+  </script>
+
 </head>
-<body>
+<body class="font-Manrope">
+
+  <Header>
+    <nav class="container mx-auto flex justify-between py-5 sm:px-0 px-5">
+      <!-- left nav -->
+      <div class="flex items-center gap-1 cursor-pointer">
+        <i class="fa-solid fa-arrow-right bg-primary w-10 h-10 flex justify-center items-center rounded-full -rotate-45 "></i> 
+        <h2 class="inline text-3xl font-extrabold ">Rinterio</h2>
+      </div>
+
+      <!-- middle nav -->
+      <div class="lg:flex items-center hidden">
+        <ul class="flex gap-10 p-1 text-secondary">
+          <li  class="font-bold"><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- right nav -->
+      <div class="flex gap-2">
+        <!-- right nav -->
+      <div class="md:flex gap-5 justify-center items-center hidden">
+        <i class="fa-solid fa-magnifying-glass border rounded-full p-3 cursor-pointer"></i>
+        <i class="fa-solid fa-cart-shopping px- border rounded-full p-3 cursor-pointer"></i>
+        <button class="btn bg-primary py-1 rounded-full "> 
+          <span class="font-extrabold text-xl">Book Consult </span>
+          <i class="fa-solid fa-arrow-right bg-black text-white w-10 h-10 flex justify-center items-center rounded-full -rotate-45 "></i> 
+        </button>
+      </div>
+
+      <!-- dropdown nav -->
+      <div class="dropdown dropdown-end lg:hidden">
+        <div tabindex="0" role="button" class="btn m-1 rounded-full bg-white">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <li  class="font-bold"><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      </div>
+      
+
+    </nav>
+    
+  </Header>
+ 
   
 </body>
-</html>
+</html> 
