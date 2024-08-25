@@ -25,6 +25,8 @@
           colors: {
             primary: '#ABEF5F',
             secondary: 'rgb(115, 115, 115)',
+            third: 'rgba(171, 239, 95, 0.5)',
+            fourth: '494949',
           },
           fontFamily: {
             Manrope: "Manrope"
@@ -39,6 +41,7 @@
 <body class="font-Manrope">
 
   <Header>
+    <!-- Navbar Starts Here -->
     <nav class="container mx-auto flex justify-between py-5 sm:px-0 px-5">
       <!-- left nav -->
       <div class="flex items-center gap-1 cursor-pointer">
@@ -87,7 +90,27 @@
       
 
     </nav>
+    <!-- Navbar Ends Here -->
     
+
+    <!-- Hero Starts here -->
+    <section class="container mx-auto flex flex-col items-center gap-6 mb-10 sm:px-0 px-5">
+
+      <div>
+        <img class="w-full" src="./assets/banner.png" alt="Banner Image">
+      </div>
+
+      <h1 class="font-extrabold lg:text-6xl md:text-4xl text-3xl text-center md:w-2/3">A barn house of this design has a striking appearance</h1>
+
+      <p class="text-fourth text-center md:w-2/3">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+      
+      <button class="btn bg-third py-1 rounded-full "> 
+        <span class="font-extrabold text-xl">View Details</span>
+        <i class="fa-solid fa-arrow-right bg-primary w-10 h-10 flex justify-center items-center rounded-full -rotate-45 "></i> 
+      </button>
+
+    </section>
+    <!-- Hero Ends here -->
   </Header>
  
   
